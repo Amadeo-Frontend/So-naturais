@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootstrap style-->
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <!--Style CSS-->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Owl Carousel-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" />
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" />
+    <!--Jquery UI-->
+    <link rel="stylesheet" href="./libs/jquery-ui.custom/jquery-ui.min.css">
+    <!--Fontawesome icons-->
+    <link rel="stylesheet" href="libs/fontawesome-/css/fontawesome.css">
+    <!--Favicon-->
+    <link rel="shortcut icon" href="./img/Logo-ico.png" type="image/x-icon">
+    <title>Só naturais</title>
+</head>
+<body>
+    <!--Navbar start-->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="./img/2.png" alt=""></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+              </li> 
+              <li class="nav-item">
+                <a class="nav-link" rel="featured" href="#featured">Produtos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link nav-modal-open" rel="sobre" href="#sobre">Sobre nós</a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link nav-modal-open" rel="contato" href="#contato">Contato</a>
+              </li>    
+            </ul>
+          </div>
+        </div>
+      </nav>
+        <!--Navbar end-->
+        
+        <!--Carousel-1 start-->
+        <div class="banner">   
+            <div class="container">
+                <div class="row ">
+                    <div class="col-md-12 w-100 p-3">
+                        <div class="caption">
+                            <div class="line-dec"></div>
+                            <div id="carouselControls" class="carousel slide carousel-fade " data-bs-ride="carousel">
+                                <div class="carousel-inner ">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2"></button>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <div class="ratio ratio-21x9">
+                                            <img src="./img/foto-3.jpg" class="d-block w-100" alt="produtos orgânicos">
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="ratio ratio-21x9">
+                                            <img src="./img/foto-2.jpg" class="d-block w-100"  alt="produtos orgânicos">
+                                            <div class="carousel-caption">
+                                                <h3><b>Só organicos</b></h3>
+                                                <p><b>Somente produtos de qualidade !!!!</b></p>
+                                            </div>  
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="ratio ratio-21x9">
+                                            <img src="./img/foto-1.jpg" class="d-block w-100"  alt="produtos orgânicos">
+                                            <div class="carousel-caption">
+                                                <h3><b>Só organicos</b></h3>
+                                                <p><b>Somente produtos de qualidade !!!!</b></p>
+                                            </div>  
+                                        </div>
+                                    </div></div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>                      
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Carousel-1 end-->   
+                
+                <!--Carousel-Products start-->
+                <div class="container-fluid my-5" id="featured">
+                    <h1 class="text-center fw-bold display-1 mb-5">Nossos <span class="text-success">produtos</span></h1>
+                    <div class="row">
+                        <div class="col-12 m-auto">
+                            <div class="owl-carousel owl-theme">
+                                <div class="item mb-4">
+                                    <div class="card border-0 shadow featured-item ">
+                                        <img src="./img/coco.jpeg" alt="Item 2">
+                                        <h4>Leite de coco em pó</h4>
+                                        <h6><del>de:R$ 15,95</del></h6>
+                                        <h5>Por:R$ 14,35</h5>
+                                        <a href="#">
+                                            Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item mb-4">
+                                    <div class="card border-0 shadow featured-item ">
+                                        <img src="./img/curcuma_acafrao_da_terra_granel.jpeg" alt="Item 3">
+                                        <h4>Cúrcuma(açafrão da terra)</h4>
+                                        <h6><del>de:R$ 4,90</del></h6>
+                                        <h5>Por:R$ 3,95</h5>
+                                        <a href"#">
+                                            Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item mb-4">
+                                    <div class="card border-0 shadow featured-item">
+                                        <img src="./img/grao_de_bico_torrado_mostarda_e_mel_45913_1_d40325b9ae7c2ba3559a255f78211adc.jpeg" alt="Item 4">
+                                        <h4>Grão de bico torrado</h4>
+                                        <h6><del>de:R$ 15,00</del></h6>
+                                        <h5>Por:R$ 11,25</h5>
+                                        <a href="#">
+                                            Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item mb-4">
+                                    <div class="card border-0 shadow featured-item">
+                                        <img src="./img/hibisco_em_flor_granel.jpeg" alt="Item 5">
+                                        <h4>Hibisco em flor(granel)</h4>
+                                        <h6><del>de:R$ 9,90</del></h6>
+                                        <h5>Por:R$ 7,99</h5>
+                                        <a href="#">
+                                            Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item mb-4">
+                                    <div class="card border-0 shadow featured-item">
+                                        <img src="./img/maca_peruana_100_pura_granel.jpeg" alt="Item 6">
+                                        <h4>Maca peruana</h4>
+                                        <h6><del>de:R$ 13,90</del></h6>
+                                        <h5>Por:R$ 11,99</h5>
+                                        <a href="#">
+                                            Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item mb-4">
+                                    <div class="card border-0 shadow featured-item">
+                                        <img src="./img/mix-castanhas.jpg" alt="Item 7">
+                                        <h4>Mix de castanhas premium</h4>
+                                        <h6><del>de:R$ 29,90</del></h6>
+                                        <h5>Por:R$ 20,99</h5>
+                                        <a href="#">
+                                            Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="item mb-4">
+                                    <div class="card border-0 shadow featured-item">
+                                        <img src="./img/pistache_sem_casca_cru_granel_884_1_20200628101008.jpeg" alt="Item 8">
+                                        <h4>Pistache sem casca cru</h4>
+                                        <h6><del>de:R$ 48,90</del></h6>
+                                        <h5>Por:R$ 45,99</h5>
+                                        <a href="#">
+                                            Comprar
+                                        </a>
+                                    </div>
+                                </div>
+                                
+                                <div class="item mb-4">
+                                    <div class="card border-0 shadow featured-item">
+                                        <img src="./img/coco.jpeg" alt="Item 2">
+                                        <h4>Leite de coco em pó</h4>
+                                        <h6><del>de:R$ 15,95</del></h6>
+                                        <h5>Por:R$ 14,35</h5>
+                                        <a href="#">
+                                            Comprar
+                                        </a>
+                                    </div>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--Carousel-Products end-->
+                
+                <!--Footer start-->
+                <div class="footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="logo">
+                                    <img src="./img/2.png" class="logo__footer" alt="Logo">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="footer-menu">
+                                    <ul>
+                                        <li><a href="#top">Home</a></li>
+                                        <li><a href="#featured">Produtos</a></li>
+                                        <li><a href="#sobre" rel="sobre" class="nav-modal-open">Sobre</a></li>
+                                        <li><a href="#contato" rel="contato" class="nav-modal-open">Contato</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="social-icons">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/amadeo82"><i class="fa-brands fa-facebook"></i></a></li>
+                                        <li><a href="https://github.com/Amadeo-Frontend"><i class="fa-brands fa-github"></i></a></li>
+                                        <li><a href="https://www.linkedin.com/in/amadeo-bon-53a2a523b/"><i class="fa fa-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sub-footer">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="copyright-text">
+                                    <p>Só naturais &copy; Todos os direitos reservados</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button onclick="backToTop();" id="btnTop"><img src="img/topo.png" alt="topo"></button>
+                <!--Footer end-->
+                
+                
+                <!-- The Modal -->
+                <div class="modal fade" id="modelId" tabindex="-1" role="dialog" aria-labelledby="modelTitleId" aria-hidden="true">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Modal title</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">              
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <div id="contato" class="visually-hidden">
+                    
+                    <form action="post" class="form">
+                        
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" name="nome" id="nome" title="Insira seu nome completo" class="form-control" placeholder="Digite seu nome" aria-describedby="helpNome">
+                            <small id="helpNome" class="text-muted">
+                                Digite um nome válido
+                            </small>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="text" name="email" id="email" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpEmail">
+                            <small id="helpEmail" class="text-muted">
+                                Digite um e-mail válido
+                            </small>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Data</label>
+                            <input type="text" name="date" id="date" class="form-control" placeholder="Digite seu e-mail" aria-describedby="helpDate">
+                            <small id="helpDate" class="text-muted">
+                                Digite uma data válida
+                            </small>
+                        </div>  
+                        
+                        <div class="mb-3">
+                            <label for="cep" class="form-label">CEP</label>
+                            <input type="text" name="cep" id="cep" class="form-control" placeholder="Digite seu cep" aria-describedby="helpCEP">
+                            <small id="helpCEP" class="text-muted">
+                                Digite um tempo válido
+                            </small>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="endereco" class="form-label">Endereço completo</label>
+                            <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Digite o endereço completo" aria-describedby="helpEndereco">
+                            <small id="helpEndereco" class="text-muted">
+                                Digite um endereço válido
+                            </small>
+                        </div>
+                        
+                        
+                        
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Celular</label>
+                            <input type="text" name="phone" id="phone" class="form-control" placeholder="Digite seu phone" aria-describedby="helpCelular" required>
+                            <small id="helpCelular" class="text-muted">
+                                Digite um celular válido
+                            </small>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" name="cpf" id="cpf" class="form-control" placeholder="Digite seu cpf" aria-describedby="helpCPF" required>
+                            <small id="helpCPF" class="text-muted">
+                                Digite um celular válido
+                            </small>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        
+                        
+                    </form>
+                    
+                </div>
+                
+                
+                <div id="sobre" class="visually-hidden">
+                    
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur explicabo eos doloribus suscipit impedit nulla voluptates eius ad sint fugiat, atque corrupti, pariatur nobis dignissimos! Ut at tempore recusandae?</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, consequatur explicabo eos doloribus suscipit impedit nulla voluptates eius ad sint fugiat, atque corrupti, pariatur nobis dignissimos! Ut at tempore recusandae?</p>
+                    
+                </div>
+                
+                
+                
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+                <script src="./libs/jquery-3.6.0.min.js"></script>
+                <script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+                crossorigin="anonymous"></script>
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+                integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+                crossorigin="anonymous"></script>
+                <script src="./libs/jquery-ui.custom/jquery-ui.min.js"></script>
+                <script src="https://kit.fontawesome.com/052c92928d.js" crossorigin="anonymous"></script>
+                <script src="./custom.js"></script>
+            </script>
+            
+        </body>
+        </html>
